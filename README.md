@@ -40,6 +40,10 @@ pnpm build:extension
 pnpm dev
 ```
 
+### Vercel deployment
+
+The repository includes `vercel.json` for a static Vite deployment. Vercel should use `pnpm build:static` and publish `dist/public`. The configuration also preserves `/api/platform/config.js`, audio MIME types/cache headers, hashed assets, and the SPA fallback so the interface loads on the root URL and direct client routes. The public service directory and bundled audio work without a server database or runtime API; the bounded Explain This feature uses the server route when that route is separately configured.
+
 For a translation-data refresh, run `python3 scripts/generate-locales.py` and then `python3 scripts/apply-locale-overrides.py`; the configured LLM proxy must be available. Re-review translated safety text before release. The generated translations are static client data; the browser does not call a translation service.
 
 The single-origin runtime serves the SPA and API. `/api/health` is the health route and `/manus-routes.json` is the Webdev route manifest.
