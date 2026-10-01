@@ -1,0 +1,6 @@
+{
+  "routes": [
+    { "path": "/", "title": "Selvi — Government Service Guide" },
+    { "path": "/404", "title": "Selvi — பக்கம் கிடைக்கவில்லை" }
+  ]
+}

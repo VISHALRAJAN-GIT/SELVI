@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ta">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Selvi — இணையதள வழிகாட்டி</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main>
+      <header><span class="mark" aria-hidden="true">N</span><div><h1>Selvi வழிகாட்டி</h1><p>அதிகாரப்பூர்வ PM Vishwakarma தளம்</p></div></header>
+      <form id="guide-form">
+        <label for="goal">நீங்கள் என்ன செய்ய விரும்புகிறீர்கள்?</label>
+        <input id="goal" name="goal" maxlength="120" placeholder="உதா: தகுதி விதிகளைப் பார்க்க" autocomplete="off" />
+        <div class="quick-actions" aria-label="விரைவு நோக்கங்கள்">
+          <button type="button" data-task="தகுதி விதிகளைப் பார்க்க">தகுதி</button>
+          <button type="button" data-task="திட்டப் பயன்களைப் பார்க்க">பயன்கள்</button>
+          <button type="button" data-task="அதிகாரப்பூர்வ FAQ-ஐப் பார்க்க">FAQ</button>
+          <button type="button" data-task="விண்ணப்ப நிலையைப் பார்க்க">நிலை</button>
+          <button type="button" data-task="புதிய பதிவு செய்ய உதவி வேண்டும்">புதிய பதிவு</button>
+        </div>
+        <button id="run-guide" class="primary" type="submit">அடுத்த இடத்தைச் சுட்டுங்கள்</button>
+      </form>
+      <p id="status" role="status" aria-live="polite"></p>
+      <aside><strong>உங்கள் கட்டுப்பாடு</strong><p>பயனர் அழுத்திய பிறகே தெரியும் இணைப்பு/பொத்தான் பெயர்களை இச்சாதனத்தில் பார்த்து அம்பைக் காட்டுகிறோம். உள்ளீட்டு மதிப்புகள், OTP, கடவுச்சொற்கள் அல்லது வங்கி விவரங்களைப் படிக்கவோ அனுப்பவோ மாட்டோம். Selvi எந்தப் பொத்தானையும் அழுத்தாது, படிவத்தையும் சமர்ப்பிக்காது.</p></aside>
+      <footer>விருப்ப உதவி · உள்ளூர் சொல்-பொருத்தம் · PM Vishwakarma தளம் மட்டும்</footer>
+    </main>
+    <script type="module" src="dist/popup.js"></script>
+  </body>
+</html>

@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "Selvi — PM Vishwakarma Page Guide",
+  "version": "1.0.0",
+  "description": "User-clicked, local-only arrow guidance for the official PM Vishwakarma website.",
+  "permissions": ["activeTab", "scripting"],
+  "action": {
+    "default_title": "Selvi — அடுத்த படியைச் சுட்டுங்கள்",
+    "default_popup": "popup.html"
+  }
+}
