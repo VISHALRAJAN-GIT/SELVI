@@ -87,7 +87,7 @@ export function GovernmentGuide({ onBack, onSpeak, voiceStatus, onStopSpeaking }
           <div>
             <strong>அந்தத் தளத்திலேயே சுட்டி வேண்டுமா?</strong>
             <p>விருப்பமான Chrome உதவியைப் பதிவிறக்கலாம். பயனர் அழுத்திய பிறகே அது அதிகாரப்பூர்வ தளத்தில் தெரியும் பொத்தான் பெயர்களைப் பார்த்து அம்பைக் காட்டும்; உள்ளீடுகள் அல்லது OTP-ஐப் படிக்காது.</p>
-            <a className="extension-download" href="/downloads/nila-page-guide.zip" download>விருப்ப Chrome உதவியைப் பதிவிறக்கவும் <ArrowRight size={15} aria-hidden="true" /></a>
+            <a className="extension-download" href="/downloads/selvi-page-guide.zip" download>விருப்ப Chrome உதவியைப் பதிவிறக்கவும் <ArrowRight size={15} aria-hidden="true" /></a>
           </div>
         </div>
       )}
